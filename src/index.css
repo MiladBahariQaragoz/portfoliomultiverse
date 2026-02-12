@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  outline: none;
+  touch-action: none;
+}
+
+/* Custom cursor styles */
+.cursor-reality-anchor {
+  cursor: none;
+}
+
+/* Glitch animation */
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+.glitch {
+  animation: glitch 0.3s infinite;
+}
+
+/* Timeline-specific styles */
+.timeline-data {
+  font-family: 'Courier New', monospace;
+  color: #00ff41;
+  text-shadow: 0 0 10px #00ff41;
+}
+
+.timeline-comic {
+  font-family: 'Comic Sans MS', cursive;
+  color: #FF6B35;
+  text-shadow: 2px 2px 0px #000;
+}
+
+.timeline-web3 {
+  font-family: 'Inter', sans-serif;
+  color: #C77DFF;
+  text-shadow: 0 0 20px #7B2CBF;
+}
