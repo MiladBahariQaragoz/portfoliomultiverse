@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { useMultiverseStore } from '../../store/multiverseStore'
 
 export const SoundController = () => {
@@ -46,8 +46,6 @@ export const SoundController = () => {
         createSingularitySoundscape(audioContext)
         break
     }
-
-    setIsPlaying(true)
 
     return () => {
       // Cleanup
