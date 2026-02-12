@@ -65,6 +65,7 @@ export const TimelineWeb3 = () => {
           maxDepthThreshold={1.4}
           color="#0a0a0a"
           metalness={0.8}
+          mirror={0}
         />
       </mesh>
 

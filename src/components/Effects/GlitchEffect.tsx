@@ -17,6 +17,8 @@ export const GlitchEffect = ({ intensity }: GlitchEffectProps) => {
       />
       <ChromaticAberration
         offset={new Vector2(intensity * 0.002, intensity * 0.002)}
+        radialModulation={false}
+        modulationOffset={0}
       />
       <Bloom
         intensity={intensity * 0.5}

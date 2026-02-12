@@ -23,7 +23,7 @@ export const Singularity = () => {
     return 'singularity'
   }, [mousePosition])
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     timeRef.current += delta
 
     if (groupRef.current) {

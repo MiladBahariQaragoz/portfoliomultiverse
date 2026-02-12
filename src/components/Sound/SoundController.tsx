@@ -6,7 +6,6 @@ export const SoundController = () => {
   const soundEnabled = useMultiverseStore((state) => state.soundEnabled)
   const toggleSound = useMultiverseStore((state) => state.toggleSound)
   
-  const [isPlaying, setIsPlaying] = useState(false)
   const audioContextRef = useRef<AudioContext | null>(null)
   const oscillatorsRef = useRef<{ [key: string]: OscillatorNode }>({})
   const gainNodesRef = useRef<{ [key: string]: GainNode }>({})
